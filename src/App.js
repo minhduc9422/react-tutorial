@@ -1,5 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
+import User from "./component/user";
+
+console.log(User(1, 2));
 
 function App() {
   return (
