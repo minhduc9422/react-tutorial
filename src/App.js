@@ -1,9 +1,10 @@
 import "./App.css";
+import MarvelComponent from "./Components/MarvelComponent";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <MarvelComponent />
     </div>
   );
 }
