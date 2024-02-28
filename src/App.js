@@ -1,11 +1,26 @@
-import "./App.css";
+import NavBar from "./components/NavBar";
+import CartList from "./components/CartList";
+import FooterCart from "./components/FooterCard";
+import { useState } from "react";
+import cartList from "./service/cart";
 
 function App() {
+  const { carts, setCarts } = useState(cartList);
+
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <main>
+      <NavBar />
+
+      <section className="cart">
+        <header>
+          <h2>your bag</h2>
+        </header>
+
+        <CartList carts={carts} />
+
+        <FooterCart />
+      </section>
+    </main>
   );
 }
-
 export default App;
